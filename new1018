@@ -1,0 +1,24 @@
+rows, cols = map(int, input().split())
+
+arr_2d = []
+
+for j in range(cols):
+    arr = list(map(str, input().split()))
+    arr_2d.append(arr)
+
+for row in arr_2d:
+    print(' '.join(row))
+
+rows = rows - 1
+for k in range(cols):
+    for i in range(rows):
+        if arr[k][i] == "B":
+            if arr[k][i] == arr[k][i+1]:
+                arr[k][i+1] = "W"
+        else:
+            if arr[k][i] == arr[k][i+1]:
+                arr[k][i+1] = "B"
+
+for row in arr_2d:
+    print(' '. join(row))
+
