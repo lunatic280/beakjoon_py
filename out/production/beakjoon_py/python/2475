@@ -1,0 +1,7 @@
+a, b, c, d, e = map(int, input().split())
+def sum(a, b, c, d, e):
+    sum = (a**2 + b**2 + c**2 + d**2 + e**2) % 10
+    print(sum)
+
+sum(a, b, c, d, e)
+

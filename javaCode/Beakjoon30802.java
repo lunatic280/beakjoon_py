@@ -1,8 +1,8 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+package javaCode;
+
 import java.util.Scanner;
 
-public class Main {
+public class Beakjoon30802 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
